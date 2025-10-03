@@ -32,6 +32,7 @@ systemctl stop nginx
 # 2. Buat sertifikat SSL baru
 echo "Creating SSL certificate for $NEW_DOMAIN..."
 certbot certonly --standalone -d "$NEW_DOMAIN" --non-interactive --agree-tos --email admin@$NEW_DOMAIN
+certbot certonly --standalone -d node"$NEW_DOMAIN" --non-interactive --agree-tos --email admin@$NEW_DOMAIN
 
 # Cek keberhasilan certbot
 if [ $? -ne 0 ]; then
