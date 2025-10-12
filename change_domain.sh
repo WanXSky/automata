@@ -42,7 +42,7 @@ fi
 
 # 3. Update domain di config.yml (hanya URL lengkap)
 echo "Updating Pterodactyl configuration..."
-sed -i "s|https://$OLD_DOMAIN|https://$NEW_DOMAIN|g" "$CONFIG_FILE"
+sed -i "s|$OLD_DOMAIN|$NEW_DOMAIN|g" "$CONFIG_FILE"
 
 # 4. Update domain di konfigurasi nginx (ganti semua kemunculan)
 echo "Updating Nginx configuration..."
