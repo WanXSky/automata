@@ -37,7 +37,7 @@ PHP
 
 # Snippet 2: Melindungi user admin dari penghapusan atau modifikasi.
 cat > "$SNIPPET_FILE_2" <<PHP
-if(\$user === (int)$ADMIN_ID) {
+if(\$user->id === (int)$ADMIN_ID) {
     throw new \Pterodactyl\Exceptions\DisplayException("Onokosy Protect diaktifkan untuk user ini");
 }
 PHP
