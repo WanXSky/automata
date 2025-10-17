@@ -38,14 +38,14 @@ PHP
 
 # Snippet 2: Melindungi user admin dari penghapusan atau modifikasi.
 cat > "$SNIPPET_FILE_2" <<PHP
-if(\$user->id === (int)$ADMIN_ID) {
+if(\$user->id == $ADMIN_ID) {
     throw new \Pterodactyl\Exceptions\DisplayException("Onokosy Protect diaktifkan untuk user ini");
 }
 PHP
 
 cat > "$SNIPPET_FILE_3" <<PHP
-if(\$user === (int)$ADMIN_ID) {
-    throw new \Pterodactyl\Exceptions\DisplayException("Onokosy Protect diaktifkan untuk user ini");
+if(\$user == $ADMIN_ID) {
+    throw new DisplayException("Onokosy Protect diaktifkan untuk user ini");
 }
 PHP
 
