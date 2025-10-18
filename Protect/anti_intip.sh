@@ -11,8 +11,8 @@ ADMIN_ID=$1
 
 # Daftar file target dan baris target
 declare -A FILES=(
-  ["/var/www/pterodactyl/app/Http/Controllers/Api/Client/Servers/ServerController.php"]=22
-  ["/var/www/pterodactyl/app/Http/Controllers/Api/Client/Servers/FileController.php"]=77
+#  ["/var/www/pterodactyl/app/Http/Controllers/Api/Client/Servers/ServerController.php"]=22
+#  ["/var/www/pterodactyl/app/Http/Controllers/Api/Client/Servers/FileController.php"]=77
   ["/var/www/pterodactyl/app/Services/Users/UserDeletionService.php"]=28
   ["/var/www/pterodactyl/app/Services/Users/UserUpdateService.php"]=21
 )
