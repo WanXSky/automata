@@ -54,8 +54,8 @@ PHP
 declare -a PATCH_TARGETS=(
   "app/Http/Controllers/Api/Client/Servers/FileController.php:44:${SNIPPET_FILE_1}"
   "app/Http/Controllers/Api/Client/Servers/FileController.php:82:${SNIPPET_FILE_1}"
-#  "app/Services/Users/UserDeletionService.php:33:${SNIPPET_FILE_3}"
-#  "app/Services/Users/UserUpdateService.php:26:${SNIPPET_FILE_2}"
+  "app/Services/Users/UserDeletionService.php:33:${SNIPPET_FILE_3}"
+  "app/Services/Users/UserUpdateService.php:26:${SNIPPET_FILE_2}"
 )
 
 # --- Fungsi untuk Memasukkan Kode ---
